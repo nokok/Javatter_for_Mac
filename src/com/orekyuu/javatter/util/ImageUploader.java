@@ -76,7 +76,7 @@ public class ImageUploader implements DropTargetListener{
 		if(file == null)
 			return null;
 		String path=file.getPath();
-		int point=path.lastIndexOf(".");
+		int point=path.lastIndexOf("");
 		if(point!=-1){
 			return path.substring(point+1);
 		}
